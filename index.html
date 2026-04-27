@@ -1,16 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Pesquisa de Satisfação Institucional - IFTO</title>
-</head>
-<body>
-    <div class="header">
-        <div class="logo-badge"><span>🎓</span> IFTO</div>
-        <h1>Pesquisa de Satisfação <br> Institucional</h1>
-        <p>Sua opinião fortalece o IFTO. Responda com honestidade e sinceridade.</p>
+  </head>
+  <body>
+    <header>
+      <div class="logo-badge"><span>🎓</span> IFTO</div>
+      <h1>
+        Pesquisa de Satisfação <br />
+        Institucional
+      </h1>
+      <p>
+        Sua opinião fortalece o IFTO. Responda com honestidade e sinceridade.
+      </p>
+    </header>
+
+    <div class="container">
+      <form action="" method="post">
+        <div class="section-card">
+          <div class="section-num">Etapa 1 - Identificação</div>
+          <h2 class="section-title">Quem é você?</h2>
+          <p class="section-desc">
+            Preencha seus dados para que possamos entrar em contato, se
+            necessário.
+          </p>
+
+          <div class="field">
+            <label>Nome Completo <span class="req">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+          <div class="field">
+            <label>E-mail <span class="req">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu.email@exemplo.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label>Telefone / WhatsApp <span class="req">*</span></label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="(63) 9 0000-0000"
+              required
+            />
+          </div>
+          <div class="field">
+            <label>Idade <span class="opt">(opcional)</span></label>
+            <input
+              type="number"
+              name="idade"
+              id="idade"
+              placeholder="Ex: 22"
+              min="10"
+              max="100"
+            />
+          </div>
+          <div class="field">
+            <label>Vínculo com o IFTO <span class="req">*</span></label>
+            <select name="vinculo" id="vinculo">
+              <option value="" selected disabled>Selecione seu Vínculo</option>
+              <option>Discente</option>
+              <option>Docente</option>
+              <option>Técnico Administrativo</option>
+              <option>Mãe / Responsável</option>
+              <option>Comunidade Externa</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Campus <span class="opt">(opcional)</span></label>
+            <select name="campus" id="campus">
+              <option value="" selected disabled>Selecione o Campus</option>
+              <option>Araguaína</option>
+              <option>Araguatins</option>
+              <option>Colinas do Tocantis</option>
+              <option>Dianópolis</option>
+              <option>Formoso do Araguaia</option>
+              <option>Gurupi</option>
+              <option>Lagoa da Confusão</option>
+              <option>Palmas</option>
+              <option>Paraíso do Tocantins</option>
+              <option>Pedro Afonso</option>
+              <option>Porto Nacional</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Curso / setor <span class="opt">(opcional)</span></label>
+            <input
+              type="text"
+              name="curso"
+              id="curso"
+              placeholder="Ex: Técnico em Informática"
+            />
+          </div>
+           <div class="field">
+            <label>Turno <span class="opt">(opcional)</span></label>
+             <select name="vinculo" id="vinculo">
+              <option value="" selected disabled>Selecione seu turno</option>
+              <option>Matutino</option>
+              <option>Vespertino</option>
+              <option>Noturno</option>
+            </select>
+           </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 2 - Origem de Contato</div>
+          <h2 class="section-title">Como conheceu o IFTO?</h2>
+          <p class="section-desc">
+            Preencha seus dados para que possamos entrar em contato, se
+            necessário.
+          </p>
+
+          <div class="field">
+            <label>Nome Completo <span class="req">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+          <div class="field">
+            <label>E-mail <span class="req">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu.email@exemplo.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label>Telefone / WhatsApp <span class="req">*</span></label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="(63) 9 0000-0000"
+              required
+            />
+          </div>
+          <div class="field">
+            <label>Idade <span class="opt">(opcional)</span></label>
+            <input
+              type="number"
+              name="idade"
+              id="idade"
+              placeholder="Ex: 22"
+              min="10"
+              max="100"
+            />
+          </div>
+          <div class="field">
+            <label>Vínculo com o IFTO <span class="req">*</span></label>
+            <select name="vinculo" id="vinculo">
+              <option value="" selected disabled>Selecione seu Vínculo</option>
+              <option>Discente</option>
+              <option>Docente</option>
+              <option>Técnico Administrativo</option>
+              <option>Mãe / Responsável</option>
+              <option>Comunidade Externa</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Campus <span class="opt">(opcional)</span></label>
+            <select name="campus" id="campus">
+              <option value="" selected disabled>Selecione o Campus</option>
+              <option>Araguaína</option>
+              <option>Araguatins</option>
+              <option>Colinas do Tocantis</option>
+              <option>Dianópolis</option>
+              <option>Formoso do Araguaia</option>
+              <option>Gurupi</option>
+              <option>Lagoa da Confusão</option>
+              <option>Palmas</option>
+              <option>Paraíso do Tocantins</option>
+              <option>Pedro Afonso</option>
+              <option>Porto Nacional</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Curso / setor <span class="opt">(opcional)</span></label>
+            <input
+              type="text"
+              name="curso"
+              id="curso"
+              placeholder="Ex: Técnico em Informática"
+            />
+          </div>
+           <div class="field">
+            <label>Turno <span class="opt">(opcional)</span></label>
+             <select name="vinculo" id="vinculo">
+              <option value="" selected disabled>Selecione seu turno</option>
+              <option>Matutino</option>
+              <option>Vespertino</option>
+              <option>Noturno</option>
+            </select>
+           </div>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
