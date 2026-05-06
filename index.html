@@ -106,112 +106,583 @@
               placeholder="Ex: Técnico em Informática"
             />
           </div>
-           <div class="field">
+          <div class="field">
             <label>Turno <span class="opt">(opcional)</span></label>
-             <select name="vinculo" id="vinculo">
+            <select name="vinculo" id="vinculo">
               <option value="" selected disabled>Selecione seu turno</option>
               <option>Matutino</option>
               <option>Vespertino</option>
               <option>Noturno</option>
             </select>
-           </div>
+          </div>
         </div>
 
         <div class="section-card">
           <div class="section-num">Etapa 2 - Origem de Contato</div>
           <h2 class="section-title">Como conheceu o IFTO?</h2>
           <p class="section-desc">
-            Preencha seus dados para que possamos entrar em contato, se
-            necessário.
+            Selecione a(s) forma(s) pela(s) qual(is) você ficou sabendo da
+            instituição.
+          </p>
+          <div class="options-grid">
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="origem"
+                value="Redes sociais"
+              /><span>Redes sociais</span></label
+            >
+            <label class="option-item"
+              ><input type="checkbox" name="origem" value="Indicação" /><span
+                >Indicação</span
+              ></label
+            >
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="origem"
+                value="Jornal/Revista"
+              /><span>Site institucional</span></label
+            >
+            <label class="option-item"
+              ><input type="checkbox" name="origem" value="Rádio/TV" /><span
+                >Eventos</span
+              ></label
+            >
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="origem"
+                value="Feira de profissões"
+              /><span>Feira de profissões</span></label
+            >
+            <label class="option-item"
+              ><input type="checkbox" name="origem" value="Outros" /><span
+                >Outros</span
+              ></label
+            >
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 3 - Experiência Acadêmica</div>
+          <h2 class="section-title">Como avalia o ensino?</h2>
+          <p class="section-desc">
+            Avalie cada aspecto de 1 (muito ruim) a 5 (excelente).
+          </p>
+
+          <div class="rating-group">
+            <div class="rating-label">Qualidade do ensino</div>
+            <div class="rating-row">
+              <input type="radio" name="r_ensino" id="re1" value="1" /><label
+                for="re1"
+                >1</label
+              >
+              <input type="radio" name="r_ensino" id="re2" value="2" /><label
+                for="re2"
+                >2</label
+              >
+              <input type="radio" name="r_ensino" id="re3" value="3" /><label
+                for="re3"
+                >3</label
+              >
+              <input type="radio" name="r_ensino" id="re4" value="4" /><label
+                for="re4"
+                >4</label
+              >
+              <input type="radio" name="r_ensino" id="re5" value="5" /><label
+                for="re5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Didática dos professores</div>
+            <div class="rating-row">
+              <input type="radio" name="r_didatica" id="rd1" value="1" /><label
+                for="rd1"
+                >1</label
+              >
+              <input type="radio" name="r_didatica" id="rd2" value="2" /><label
+                for="rd2"
+                >2</label
+              >
+              <input type="radio" name="r_didatica" id="rd3" value="3" /><label
+                for="rd3"
+                >3</label
+              >
+              <input type="radio" name="r_didatica" id="rd4" value="4" /><label
+                for="rd4"
+                >4</label
+              >
+              <input type="radio" name="r_didatica" id="rd5" value="5" /><label
+                for="rd5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Organização curricular</div>
+            <div class="rating-row">
+              <input type="radio" name="r_org" id="ro1" value="1" /><label
+                for="ro1"
+                >1</label
+              >
+              <input type="radio" name="r_org" id="ro2" value="2" /><label
+                for="ro2"
+                >2</label
+              >
+              <input type="radio" name="r_org" id="ro3" value="3" /><label
+                for="ro3"
+                >3</label
+              >
+              <input type="radio" name="r_org" id="ro4" value="4" /><label
+                for="ro4"
+                >4</label
+              >
+              <input type="radio" name="r_org" id="ro5" value="5" /><label
+                for="ro5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Integração teoria–prática</div>
+            <div class="rating-row">
+              <input type="radio" name="r_tp" id="rt1" value="1" /><label
+                for="rt1"
+                >1</label
+              >
+              <input type="radio" name="r_tp" id="rt2" value="2" /><label
+                for="rt2"
+                >2</label
+              >
+              <input type="radio" name="r_tp" id="rt3" value="3" /><label
+                for="rt3"
+                >3</label
+              >
+              <input type="radio" name="r_tp" id="rt4" value="4" /><label
+                for="rt4"
+                >4</label
+              >
+              <input type="radio" name="r_tp" id="rt5" value="5" /><label
+                for="rt5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 4 - Infraestrutura</div>
+          <h2 class="section-title">Como estão as instalações?</h2>
+          <p class="section-desc">
+            Avalie cada aspecto de 1 (muito ruim) a 5 (excelente).
+          </p>
+
+          <div class="rating-group">
+            <div class="rating-label">Salas de aula</div>
+            <div class="rating-row">
+              <input type="radio" name="r_salas" id="re1" value="1" /><label
+                for="re1"
+                >1</label
+              >
+              <input type="radio" name="r_salas" id="re2" value="2" /><label
+                for="re2"
+                >2</label
+              >
+              <input type="radio" name="r_salas" id="re3" value="3" /><label
+                for="re3"
+                >3</label
+              >
+              <input type="radio" name="r_salas" id="re4" value="4" /><label
+                for="re4"
+                >4</label
+              >
+              <input type="radio" name="r_salas" id="re5" value="5" /><label
+                for="re5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Laboratórios</div>
+            <div class="rating-row">
+              <input type="radio" name="r_lab" id="rd1" value="1" /><label
+                for="rd1"
+                >1</label
+              >
+              <input type="radio" name="r_lab" id="rd2" value="2" /><label
+                for="rd2"
+                >2</label
+              >
+              <input type="radio" name="r_lab" id="rd3" value="3" /><label
+                for="rd3"
+                >3</label
+              >
+              <input type="radio" name="r_lab" id="rd4" value="4" /><label
+                for="rd4"
+                >4</label
+              >
+              <input type="radio" name="r_lab" id="rd5" value="5" /><label
+                for="rd5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Biblioteca</div>
+            <div class="rating-row">
+              <input type="radio" name="r_bib" id="ro1" value="1" /><label
+                for="ro1"
+                >1</label
+              >
+              <input type="radio" name="r_bib" id="ro2" value="2" /><label
+                for="ro2"
+                >2</label
+              >
+              <input type="radio" name="r_bib" id="ro3" value="3" /><label
+                for="ro3"
+                >3</label
+              >
+              <input type="radio" name="r_bib" id="ro4" value="4" /><label
+                for="ro4"
+                >4</label
+              >
+              <input type="radio" name="r_bib" id="ro5" value="5" /><label
+                for="ro5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Limpeza e conservação</div>
+            <div class="rating-row">
+              <input type="radio" name="r_limp" id="rt1" value="1" /><label
+                for="rt1"
+                >1</label
+              >
+              <input type="radio" name="r_limp" id="rt2" value="2" /><label
+                for="rt2"
+                >2</label
+              >
+              <input type="radio" name="r_limp" id="rt3" value="3" /><label
+                for="rt3"
+                >3</label
+              >
+              <input type="radio" name="r_limp" id="rt4" value="4" /><label
+                for="rt4"
+                >4</label
+              >
+              <input type="radio" name="r_limp" id="rt5" value="5" /><label
+                for="rt5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Tecnologia e equipamentos</div>
+            <div class="rating-row">
+              <input type="radio" name="r_tec" id="rt1" value="1" /><label
+                for="rt1"
+                >1</label
+              >
+              <input type="radio" name="r_tec" id="rt2" value="2" /><label
+                for="rt2"
+                >2</label
+              >
+              <input type="radio" name="r_tec" id="rt3" value="3" /><label
+                for="rt3"
+                >3</label
+              >
+              <input type="radio" name="r_tec" id="rt4" value="4" /><label
+                for="rt4"
+                >4</label
+              >
+              <input type="radio" name="r_tec" id="rt5" value="5" /><label
+                for="rt5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 5 - Serviços</div>
+          <h2 class="section-title">Avalie os serviços prestados</h2>
+          <p class="section-desc">
+            Como é a experiência com os serviços administrativos e de apoio?
+          </p>
+
+          <div class="rating-group">
+            <div class="rating-label">Qualidade do atendimento</div>
+            <div class="rating-row">
+              <input type="radio" name="r_atend" id="rat1" value="1" /><label
+                for="rat1"
+                >1</label
+              >
+              <input type="radio" name="r_atend" id="rat2" value="2" /><label
+                for="rat2"
+                >2</label
+              >
+              <input type="radio" name="r_atend" id="rat3" value="3" /><label
+                for="rat3"
+                >3</label
+              >
+              <input type="radio" name="r_atend" id="rat4" value="4" /><label
+                for="rat4"
+                >4</label
+              >
+              <input type="radio" name="r_atend" id="rat5" value="5" /><label
+                for="rat5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Comunicação institucional</div>
+            <div class="rating-row">
+              <input type="radio" name="r_com" id="rco1" value="1" /><label
+                for="rco1"
+                >1</label
+              >
+              <input type="radio" name="r_com" id="rco2" value="2" /><label
+                for="rco2"
+                >2</label
+              >
+              <input type="radio" name="r_com" id="rco3" value="3" /><label
+                for="rco3"
+                >3</label
+              >
+              <input type="radio" name="r_com" id="rco4" value="4" /><label
+                for="rco4"
+                >4</label
+              >
+              <input type="radio" name="r_com" id="rco5" value="5" /><label
+                for="rco5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="rating-group">
+            <div class="rating-label">Facilidade de resolução de problemas</div>
+            <div class="rating-row">
+              <input type="radio" name="r_res" id="rre1" value="1" /><label
+                for="rre1"
+                >1</label
+              >
+              <input type="radio" name="r_res" id="rre2" value="2" /><label
+                for="rre2"
+                >2</label
+              >
+              <input type="radio" name="r_res" id="rre3" value="3" /><label
+                for="rre3"
+                >3</label
+              >
+              <input type="radio" name="r_res" id="rre4" value="4" /><label
+                for="rre4"
+                >4</label
+              >
+              <input type="radio" name="r_res" id="rre5" value="5" /><label
+                for="rre5"
+                >5</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 6 - Permanência</div>
+          <h2 class="section-title">Sua continuidade no IFTO</h2>
+          <p class="section-desc">
+            Queremos entender os desafios que podem impactar sua trajetória.
           </p>
 
           <div class="field">
-            <label>Nome Completo <span class="req">*</span></label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Seu nome completo"
-              required
-            />
+            <label>Você já pensou em desistir do IFTO?</label>
+            <div class="toggle-group">
+              <input
+                type="radio"
+                name="desis-ifto"
+                id="sim"
+                value="sim"
+              /><label for="sim">Sim</label>
+              <input
+                type="radio"
+                name="desis-ifto"
+                id="não"
+                value="não"
+              /><label for="não">Não</label>
+            </div>
           </div>
+
           <div class="field">
-            <label>E-mail <span class="req">*</span></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="seu.email@exemplo.com"
-              required
-            />
+            <label
+              >Se sim, quais foram os principais motivos?
+              <span class="opt">(opcional)</span></label
+            >
+            <div class="options-grid" style="grid-template-columns: 1fr">
+              <label class="option-item"
+                ><input
+                  type="checkbox"
+                  name="motivos"
+                  value="Dificuldades financeiras"
+                /><span>Dificuldades financeiras</span></label
+              >
+              <label class="option-item"
+                ><input
+                  type="checkbox"
+                  name="motivos"
+                  value="Dificuldades acadêmicas"
+                /><span>Dificuldades acadêmicas</span></label
+              >
+              <label class="option-item"
+                ><input
+                  type="checkbox"
+                  name="motivos"
+                  value="Problemas de saúde"
+                /><span>Problemas de saúde</span></label
+              >
+              <label class="option-item"
+                ><input
+                  type="checkbox"
+                  name="motivos"
+                  value="Distância / transporte"
+                /><span>Distância / transporte</span></label
+              >
+              <label class="option-item"
+                ><input
+                  type="checkbox"
+                  name="motivos"
+                  value="Clima institucional"
+                /><span>Clima institucional</span></label
+              >
+              <label class="option-item"
+                ><input type="checkbox" name="motivos" value="Outros" /><span
+                  >Outros</span
+                ></label
+              >
+            </div>
           </div>
+
           <div class="field">
-            <label>Telefone / WhatsApp <span class="req">*</span></label>
-            <input
-              type="tel"
-              name="telefone"
-              id="telefone"
-              placeholder="(63) 9 0000-0000"
-              required
-            />
+            <label>Grau de dificuldade geral na instituição</label>
+            <input type="range" min="1" max="10" />
           </div>
-          <div class="field">
-            <label>Idade <span class="opt">(opcional)</span></label>
-            <input
-              type="number"
-              name="idade"
-              id="idade"
-              placeholder="Ex: 22"
-              min="10"
-              max="100"
-            />
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 7 - Inovação</div>
+          <h2 class="section-title">Novos serviços e melhorias</h2>
+          <p class="section-desc">
+            Selecione o que você gostaria de ver no IFTO.
+          </p>
+          <div class="options-grid" style="grid-template-columns: 1fr">
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="inovacao"
+                value="App institucional"
+              /><span> Aplicativo institucional</span></label
+            >
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="inovacao"
+                value="Tutoria virtual"
+              /><span> Tutoria virtual / IA</span></label
+            >
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="inovacao"
+                value="Mais atividades esportivas"
+              /><span> Mais atividades esportivas e culturais</span></label
+            >
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="inovacao"
+                value="Cursos livres"
+              /><span> Cursos livres e extensão</span></label
+            >
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="inovacao"
+                value="Acompanhamento psicológico"
+              /><span> Acompanhamento psicológico ampliado</span></label
+            >
+            <label class="option-item"
+              ><input
+                type="checkbox"
+                name="inovacao"
+                value="Portal de vagas e estágios"
+              /><span> Portal de vagas e estágios</span></label
+            >
+            <label class="option-item"
+              ><input type="checkbox" name="inovacao" value="Outros" /><span>
+                Outros</span
+              ></label
+            >
           </div>
-          <div class="field">
-            <label>Vínculo com o IFTO <span class="req">*</span></label>
-            <select name="vinculo" id="vinculo">
-              <option value="" selected disabled>Selecione seu Vínculo</option>
-              <option>Discente</option>
-              <option>Docente</option>
-              <option>Técnico Administrativo</option>
-              <option>Mãe / Responsável</option>
-              <option>Comunidade Externa</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Campus <span class="opt">(opcional)</span></label>
-            <select name="campus" id="campus">
-              <option value="" selected disabled>Selecione o Campus</option>
-              <option>Araguaína</option>
-              <option>Araguatins</option>
-              <option>Colinas do Tocantis</option>
-              <option>Dianópolis</option>
-              <option>Formoso do Araguaia</option>
-              <option>Gurupi</option>
-              <option>Lagoa da Confusão</option>
-              <option>Palmas</option>
-              <option>Paraíso do Tocantins</option>
-              <option>Pedro Afonso</option>
-              <option>Porto Nacional</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Curso / setor <span class="opt">(opcional)</span></label>
-            <input
-              type="text"
-              name="curso"
-              id="curso"
-              placeholder="Ex: Técnico em Informática"
-            />
-          </div>
-           <div class="field">
-            <label>Turno <span class="opt">(opcional)</span></label>
-             <select name="vinculo" id="vinculo">
-              <option value="" selected disabled>Selecione seu turno</option>
-              <option>Matutino</option>
-              <option>Vespertino</option>
-              <option>Noturno</option>
-            </select>
-           </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 8</div>
+          <textarea placeholder="Pontos fortes"></textarea>
+          <textarea placeholder="Problemas"></textarea>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 9</div>
+          <label>Nota geral</label>
+          <input type="range" min="1" max="5" />
         </div>
       </form>
     </div>
