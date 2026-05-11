@@ -571,15 +571,15 @@
                 ><input
                   type="checkbox"
                   name="motivos"
-                  value="Dificuldades financeiras"
-                /><span>Dificuldades financeiras</span></label
+                  value="degreeiculdades financeiras"
+                /><span>degreeiculdades financeiras</span></label
               >
               <label class="option-item"
                 ><input
                   type="checkbox"
                   name="motivos"
-                  value="Dificuldades acadêmicas"
-                /><span>Dificuldades acadêmicas</span></label
+                  value="degreeiculdades acadêmicas"
+                /><span>degreeiculdades acadêmicas</span></label
               >
               <label class="option-item"
                 ><input
@@ -612,7 +612,51 @@
 
           <div class="field">
             <label>Grau de dificuldade geral na instituição</label>
-            <input type="range" min="1" max="10" />
+            <div class="rating-row">
+              <input type="radio" name="r_degree" id="deg1" value="1" /><label
+                for="deg1"
+                >1</label
+              >
+              <input type="radio" name="r_degree" id="deg2" value="2" /><label
+                for="deg2"
+                >2</label
+              >
+              <input type="radio" name="r_degree" id="deg3" value="3" /><label
+                for="deg3"
+                >3</label
+              >
+              <input type="radio" name="r_degree" id="deg4" value="4" /><label
+                for="deg4"
+                >4</label
+              >
+              <input type="radio" name="r_degree" id="deg5" value="5" /><label
+                for="deg5"
+                >5</label
+              >
+              <input type="radio" name="r_degree" id="deg6" value="6" /><label
+                for="deg6"
+                >6</label
+              >
+              <input type="radio" name="r_degree" id="deg7" value="7" /><label
+                for="deg7"
+                >7</label
+              >
+              <input type="radio" name="r_degree" id="deg8" value="8" /><label
+                for="deg8"
+                >8</label
+              >
+              <input type="radio" name="r_degree" id="deg9" value="9" /><label
+                for="deg9"
+                >9</label
+              >
+              <input type="radio" name="r_degree" id="deg10" value="10" /><label
+                for="deg10"
+                >10</label
+              >
+            </div>
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span><span>Excelente</span>
+            </div>
           </div>
         </div>
 
@@ -674,15 +718,158 @@
         </div>
 
         <div class="section-card">
-          <div class="section-num">Etapa 8</div>
-          <textarea placeholder="Pontos fortes"></textarea>
-          <textarea placeholder="Problemas"></textarea>
+          <div class="section-num">Etapa 8 - Feedback</div>
+          <h2 class="section-title">Conte sua experiência</h2>
+          <p class="section-desc">
+            Seu feedback ajuda a melhorar continuamente os serviços e o ambiente
+            institucional.
+          </p>
+
+          <div class="field">
+            <label>Pontos fortes</label>
+            <textarea
+              name="pontos_fortes"
+              id="pontos_fortes"
+              placeholder="O que você mais gostou no IFTO?"
+            ></textarea>
+          </div>
+
+          <div class="field">
+            <label>Problemas</label>
+            <textarea
+              name="problemas"
+              id="problemas"
+              placeholder="Quais dificuldades ou problemas você encontrou?"
+            ></textarea>
+          </div>
+
+          <div class="field">
+            <label>Sugestões</label>
+            <textarea
+              name="sugestoes"
+              id="sugestoes"
+              placeholder="O que poderia melhorar?"
+            ></textarea>
+          </div>
         </div>
 
         <div class="section-card">
-          <div class="section-num">Etapa 9</div>
-          <label>Nota geral</label>
-          <input type="range" min="1" max="5" />
+          <div class="section-num">Etapa 9 - Avaliação Geral</div>
+          <h2 class="section-title">Sua visão geral sobre o IFTO</h2>
+          <p class="section-desc">
+            Dê uma nota geral e diga se recomendaria a instituição.
+          </p>
+
+          <div class="field">
+            <label>Nota geral</label>
+
+            <div class="rating-row">
+              <input type="radio" name="nota_geral" id="nota1" value="1" />
+              <label for="nota1">1</label>
+
+              <input type="radio" name="nota_geral" id="nota2" value="2" />
+              <label for="nota2">2</label>
+
+              <input type="radio" name="nota_geral" id="nota3" value="3" />
+              <label for="nota3">3</label>
+
+              <input type="radio" name="nota_geral" id="nota4" value="4" />
+              <label for="nota4">4</label>
+
+              <input type="radio" name="nota_geral" id="nota5" value="5" />
+              <label for="nota5">5</label>
+
+              <input type="radio" name="nota_geral" id="nota6" value="6" />
+              <label for="nota6">6</label>
+
+              <input type="radio" name="nota_geral" id="nota7" value="7" />
+              <label for="nota7">7</label>
+
+              <input type="radio" name="nota_geral" id="nota8" value="8" />
+              <label for="nota8">8</label>
+
+              <input type="radio" name="nota_geral" id="nota9" value="9" />
+              <label for="nota9">9</label>
+
+              <input type="radio" name="nota_geral" id="nota10" value="10" />
+              <label for="nota10">10</label>
+            </div>
+
+            <div class="rating-scale-desc">
+              <span>Muito ruim</span>
+              <span>Excelente</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Você recomendaria o IFTO para outras pessoas?</label>
+
+            <div class="toggle-group">
+              <input
+                type="radio"
+                name="recomendacao"
+                id="rec_sim"
+                value="sim"
+              />
+              <label for="rec_sim">Sim</label>
+
+              <input
+                type="radio"
+                name="recomendacao"
+                id="rec_nao"
+                value="nao"
+              />
+              <label for="rec_nao">Não</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-num">Etapa 10 - Consentimento</div>
+          <h2 class="section-title">Uso de informações</h2>
+          <p class="section-desc">
+            Precisamos da sua autorização para utilização dos dados fornecidos.
+          </p>
+
+          <div class="field">
+            <label class="option-item">
+              <input type="checkbox" name="consentimento_dados" required />
+              <span>
+                Autorizo o uso dos dados fornecidos para fins institucionais e
+                estatísticos.
+              </span>
+            </label>
+          </div>
+
+          <div class="field">
+            <label>Autoriza contato posterior?</label>
+
+            <div class="toggle-group">
+              <input
+                type="radio"
+                name="contato_posterior"
+                id="contato_sim"
+                value="sim"
+              />
+              <label for="contato_sim">Sim</label>
+
+              <input
+                type="radio"
+                name="contato_posterior"
+                id="contato_nao"
+                value="nao"
+              />
+              <label for="contato_nao">Não</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card submit-card">
+          <h2 class="section-title">Finalizar pesquisa</h2>
+          <p class="section-desc">
+            Confira suas respostas antes de enviar o formulário.
+          </p>
+          <button type="submit" class="submit-btn">Enviar pesquisa</button>
         </div>
       </form>
     </div>

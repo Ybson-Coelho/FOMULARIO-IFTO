@@ -27,7 +27,6 @@ header {
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.05rem;
-  gap: 10px;
   border-radius: 10px;
   padding: 5px 10px;
 }
@@ -137,7 +136,7 @@ textarea:focus {
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
   min-height: 90px;
 }
 
@@ -271,6 +270,29 @@ select {
 .toggle-group label:hover {
   border-color: #8c9b72;
   color: #515c3e;
+}
+
+.submit-card {
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 16px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #8c9b72;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
 }
 
 @media (max-width: 768px) {
